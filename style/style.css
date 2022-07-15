@@ -1,0 +1,201 @@
+:root {
+  --first-title-color: #212121;
+  --accent-color: #2196f3;
+  --title-color: #757575;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+/* --  header -- */
+.header {
+  background: #ffffff;
+}
+
+.header-logo {
+  color: #000000;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.header-logo-accent {
+  color: var(--accent-color);
+}
+
+.header-menu {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.header-menu:hover,
+.header-menu:focus {
+  color: var(--accent-color);
+}
+
+.header-mail-link,
+.header-tell-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.header-mail-link:hover,
+.header-tell-link:hover,
+.header-mail-link:focus,
+.header-tell-link:focus {
+  color: var(--accent-color);
+}
+
+/* --  hero -- */
+.hero {
+  background: #2f303a;
+}
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.hero-btn {
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #ffffff;
+  color: var(--accent-color);
+}
+/* --  Benefits about -- */
+.about-pre-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--first-title-color);
+}
+
+.about-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--title-color);
+}
+
+/* -- What are we doing -- */
+
+.work-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--first-title-color);
+}
+
+/* -- our team -- */
+.team {
+}
+.team-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--first-title-color);
+}
+
+.team-item-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--first-title-color);
+}
+.team-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--title-color);
+}
+
+/* -- filter -- */
+.filter-btn {
+  background-color: #f5f4fa;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--first-title-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+/* -- portfolio-- */
+
+/* -- footer -- */
+.footer {
+  background-color: #2f303a;
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+}
+.footer-logo-accent {
+  color: var(--accent-color);
+}
+.footer-address {
+}
+.footer-list {
+}
+.footer-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.footer-link-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-link-tell {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
