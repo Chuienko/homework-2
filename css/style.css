@@ -1,11 +1,20 @@
 :root {
+  --color-logo: #000000;
   --first-title-color: #212121;
   --accent-color: #2196f3;
-  --title-color: #757575;
+  --item-color: #757575;
+  --color-white-text: #fff;
+  --color-backgroutd: #2f303a;
+  --color-btn: #f5f4fa;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.14;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--first-title-color);
 }
 
 li {
@@ -17,7 +26,7 @@ li {
 }
 /* --  header -- */
 .header {
-  background: #ffffff;
+  background: var(--color-white-text);
 }
 
 .header-logo {
@@ -38,12 +47,8 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.header-menu:hover,
-.header-menu:focus {
-  color: var(--accent-color);
+  color: var(--first-title-color);
+  letter-spacing: 0.02em;
 }
 
 .header-mail-link,
@@ -52,7 +57,16 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-color);
+  color: var(--item-color);
+}
+/* Активна кнопка посилання */
+.current {
+  color: var(--accent-color);
+}
+/* При наведенні змінює колір */
+.header-menu:hover,
+.header-menu:focus {
+  color: var(--accent-color);
 }
 
 .header-mail-link:hover,
@@ -64,40 +78,41 @@ li {
 
 /* --  hero -- */
 .hero {
-  background: #2f303a;
+  background: var(--color-backgroutd);
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: #ffffff;
+  color: var(--color-white-text);
+  letter-spacing: 0.06em;
 }
 
 .hero-btn {
+  font-family: "Roboto";
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: #ffffff;
+  color: var(--color-white-text);
+  letter-spacing: 0.06em;
+  border: 0;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color:#f5f4fa;
+  background-color: var(--color-btn);
   color: var(--accent-color);
 }
 /* --  Benefits about -- */
 .about-pre-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  color: var(--first-title-color);
 }
 
 .about-title {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  color: var(--title-color);
+  color: var(--item-color);
 }
 
 /* -- What are we doing -- */
@@ -106,7 +121,6 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  color: var(--first-title-color);
 }
 
 /* -- our team -- */
@@ -116,63 +130,73 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  color: var(--first-title-color);
 }
 
 .team-item-title {
   font-family: "Roboto";
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  color: var(--first-title-color);
 }
 .team-item-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  color: var(--title-color);
+  color: var(--item-color);
 }
 
 /* -- filter -- */
 .filter-btn {
-  background-color: #f5f4fa;
-  font-weight: 500;
+  font-family: "Roboto";
+  background-color: var(--color-btn);
   font-size: 16px;
   line-height: 1.62;
-  color: var(--first-title-color);
+  border: 0;
+  letter-spacing: 0.03em;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--color-white-text);
 }
 /* -- portfolio-- */
 
+.portfolio-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--item-color);
+}
+
 /* -- footer -- */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--color-backgroutd);
 }
 .footer-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #ffffff;
+  color: var(--color-white-text);
 }
 .footer-logo-accent {
   color: var(--accent-color);
 }
-.footer-address {
-}
+
 .footer-list {
+  font-style: normal;
 }
 .footer-item {
+  font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  color: #ffffff;
-  font-family: "Roboto";
-  font-family: "Roboto";
+  color: var(--color-white-text);
 }
 .footer-link-mail {
   font-weight: 400;
