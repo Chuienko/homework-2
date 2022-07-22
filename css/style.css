@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
 :root {
   --color-logo: #000000;
   --first-title-color: #212121;
@@ -10,7 +19,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.14;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -30,7 +39,7 @@ li {
 }
 
 .header-logo {
-  color: #000000;
+  color: var(--color-logo);
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -43,7 +52,6 @@ li {
 }
 
 .header-menu {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -79,6 +87,7 @@ li {
 /* --  hero -- */
 .hero {
   background: var(--color-backgroutd);
+  text-transform: uppercase;
 }
 .hero-title {
   font-weight: 900;
@@ -89,7 +98,6 @@ li {
 }
 
 .hero-btn {
-  font-family: "Roboto";
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -104,13 +112,14 @@ li {
   color: var(--accent-color);
 }
 /* --  Benefits about -- */
+
 .about-pre-title {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
 }
 
 .about-title {
-  font-weight: 400;
   line-height: 1.71;
   color: var(--item-color);
 }
@@ -121,6 +130,7 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 /* -- our team -- */
@@ -130,15 +140,15 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .team-item-title {
-  font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 .team-item-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   color: var(--item-color);
@@ -146,7 +156,6 @@ li {
 
 /* -- filter -- */
 .filter-btn {
-  font-family: "Roboto";
   background-color: var(--color-btn);
   font-size: 16px;
   line-height: 1.62;
@@ -163,14 +172,13 @@ li {
 .portfolio-item-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-item-text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   color: var(--item-color);
 }
 
@@ -193,19 +201,15 @@ li {
   font-style: normal;
 }
 .footer-item {
-  font-family: "Roboto";
-  font-weight: 400;
   line-height: 1.71;
   color: var(--color-white-text);
 }
 .footer-link-mail {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link-tell {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
